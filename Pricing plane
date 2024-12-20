@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .plan {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .plan h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .plan .description {
+            font-size: 0.95rem;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .plan .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plan .billing {
+            font-size: 0.9rem;
+            color: gray;
+            margin-bottom: 15px;
+        }
+
+        .plan ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .plan ul li {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Special Offer -->
+        <div class="plan">
+            <h2>Special Offer</h2>
+            <div class="description">This plan is perfect for: Premium services at an unbeatable price.</div>
+            <div class="price">$59.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>Patient ID Card</li>
+                <li>Initial PDF</li>
+                <li>Hard Copy With Embossed Seal</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+
+        <!-- New Patient (Position 2) -->
+        <div class="plan">
+            <h2>New Patient</h2>
+            <div class="description">This plan is perfect for: First-time patients seeking standard benefits.</div>
+            <div class="price">$39.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>Patient ID</li>
+                <li>New Record</li>
+                <li>Record in PDF</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+
+        <!-- New Patient (Position 3) -->
+        <div class="plan">
+            <h2>New Patient</h2>
+            <div class="description">This plan is perfect for: Patients needing hard copy documentation.</div>
+            <div class="price">$49.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>Patient ID</li>
+                <li>New Record</li>
+                <li>Record in Hard Copy</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+
+        <!-- New Patient (Position 4) -->
+        <div class="plan">
+            <h2>New Patient</h2>
+            <div class="description">This plan is perfect for: Patients who require caregiver benefits.</div>
+            <div class="price">$99.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>Caregiver</li>
+                <li>New Record</li>
+                <li>Record in Hard Copy</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+
+        <!-- Growers Plan -->
+        <div class="plan">
+            <h2>Growers Plan</h2>
+            <div class="description">This plan is perfect for: Growers needing cultivation licenses.</div>
+            <div class="price">$189.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>License to Cultivate Up to 99 Plants</li>
+                <li>New Record</li>
+                <li>Record in Hard Copy</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+
+        <!-- Renewal -->
+        <div class="plan">
+            <h2>Renewal</h2>
+            <div class="description">This plan is perfect for: Renewing your existing patient benefits.</div>
+            <div class="price">$45.99</div>
+            <div class="billing">one time<br>billed annually</div>
+            <ul>
+                <li>Same Patient ID</li>
+                <li>Record in PDF</li>
+                <li>Record in Hard Copy</li>
+            </ul>
+            <a href="#" class="btn">Buy Now →</a>
+        </div>
+    </div>
+</body>
+</html>
